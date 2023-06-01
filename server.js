@@ -95,7 +95,7 @@ app.post("/login", async (req, res) => {
 
   res.cookie("logintoken", jwtToken, {
     httpOnly: true,
-    expires: new Date(Date.now() + 60 * 1000),
+    expires: new Date(Date.now() + 300 * 1000),
   });
 
   res.redirect("/");
