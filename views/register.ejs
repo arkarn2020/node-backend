@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <main>
+      <form action="register" method="post">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="your@email.com"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="* * *"
+        />
+        <button type="submit">Register</button>
+      </form>
+      <p><%=locals.register%></p>
+      <p>
+        <a href="http://localhost:3500/login"> login now! </a>
+      </p>
+    </main>
+  </body>
+</html>
