@@ -91,6 +91,11 @@ app.post("/login", async (req, res) => {
     return;
   }
 
+  if (!existingUser.enabled) {
+    res.render("login", { login: "account disabled!" });
+    return;
+  }
+
   const jwtToken = jwt.sign({ id: existingUser.id }, process.env.JWTSECRET);
 
   res.cookie("logintoken", jwtToken, {
