@@ -21,3 +21,9 @@ learning backend step by step
 > > - login existing user
 > > - send jwt token for authentication and store in cookie
 > > - home page with logout button
+
+---
+
+> deployment
+
+> > - tried deploying on railway app, have some errors will try to fix it
