@@ -26,4 +26,9 @@ learning backend step by step
 
 > deployment
 
-> > - tried deploying on railway app, have some errors will try to fix it
+```
+[site deployed using railway](https://node-backend.up.railway.app/)
+```
+
+> > - tried deploying on railway app, received error, will try to fix it
+> > - changed redirect urls in login and register page from localhost to deployed url
