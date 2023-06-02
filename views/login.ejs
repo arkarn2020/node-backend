@@ -28,7 +28,8 @@
       </form>
       <p><%=locals.login%></p>
       <p>
-        <a href="http://localhost:3500/register"> register now! </a>
+        <!-- <a href="http://localhost:3500/register"> register now! </a> -->
+        <a href="<%=process.env.PROD_URL%>/register"> register now! </a>
       </p>
     </main>
   </body>
